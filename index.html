@@ -4,122 +4,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>UDA - Uzbekistan Developers Association</title>
-    <style>
-        /* Google Fonts */
-        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
-
-        /* Tana stili */
-        body {
-            font-family: 'Poppins', sans-serif;
-            margin: 0;
-            padding: 0;
-            text-align: center;
-            transition: 0.3s;
-        }
-
-        /* Dark va Light rejim */
-        .light-mode {
-            background: #f4f4f4;
-            color: #333;
-        }
-
-        .dark-mode {
-            background: #1b1b1b;
-            color: #fff;
-        }
-
-        /* Asosiy konteyner */
-        .container {
-            max-width: 600px;
-            margin: 100px auto;
-            padding: 20px;
-            border-radius: 15px;
-            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
-            background: rgba(255, 255, 255, 0.1);
-            backdrop-filter: blur(10px);
-            transition: 0.3s;
-        }
-
-        /* Matn stili */
-        h1 {
-            font-size: 2.5rem;
-            font-weight: 700;
-            animation: fadeIn 1s ease-in-out;
-        }
-
-        p {
-            font-size: 1.2rem;
-            font-weight: 300;
-        }
-
-        /* Tugma stili */
-        button {
-            padding: 12px 24px;
-            font-size: 1rem;
-            border: none;
-            cursor: pointer;
-            border-radius: 5px;
-            transition: 0.3s;
-            background: royalblue;
-            color: #fff;
-        }
-
-        button:hover {
-            background: dodgerblue;
-        }
-
-        /* Navigatsiya */
-        nav {
-            display: flex;
-            justify-content: center;
-            padding: 10px 0;
-            background: rgba(0, 0, 0, 0.2);
-            backdrop-filter: blur(10px);
-        }
-
-        nav a {
-            color: white;
-            text-decoration: none;
-            margin: 0 15px;
-            font-weight: 600;
-            transition: 0.3s;
-        }
-
-        nav a:hover {
-            color: royalblue;
-        }
-
-        /* Animatsiyalar */
-        @keyframes fadeIn {
-            from {
-                opacity: 0;
-                transform: translateY(-20px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
-<body class="dark-mode">
-    <nav>
-        <a href="#">Bosh sahifa</a>
-        <a href="#">Haqida</a>
-        <a href="#">Bog‘lanish</a>
-    </nav>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">Bosh sahifa</a></li>
+                <li><a href="#">Haqida</a></li>
+                <li><a href="#">Xizmatlar</a></li>
+                <li><a href="#">Loyihalar</a></li>
+                <li><a href="#">A’zolar</a></li>
+                <li><a href="#">Bog‘lanish</a></li>
+            </ul>
+            <div class="auth-buttons">
+                <button class="login">Kirish</button>
+                <button class="register">Ro‘yxatdan o‘tish</button>
+                <button id="theme-toggle">🌙</button>
+            </div>
+        </nav>
+    </header>
 
-    <div class="container">
-        <h1>Assalomu alaykum!</h1>
-        <p>Bu UDA ning rasmiy veb-sayti.</p>
-        <button onclick="toggleMode()">Dark/Light almashtirish</button>
-    </div>
+    <main>
+        <section class="hero">
+            <h1>Assalomu alaykum!</h1>
+            <p>Bu UDA ning rasmiy veb-sayti. Dasturchilar jamiyati haqida bilib oling.</p>
+            <button id="learn-more">Batafsil</button>
+        </section>
+    </main>
 
-    <script>
-        function toggleMode() {
-            document.body.classList.toggle('light-mode');
-            document.body.classList.toggle('dark-mode');
-        }
-    </script>
+    <script src="script.js"></script>
 </body>
 </html>
