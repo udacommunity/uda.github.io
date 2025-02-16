@@ -1,0 +1,74 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #121212;
+    color: white;
+    text-align: center;
+    transition: background 0.3s, color 0.3s;
+}
+
+header {
+    background: #1f1f1f;
+    padding: 15px 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.auth-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+button {
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.login {
+    background: #007bff;
+    color: white;
+}
+
+.register {
+    background: #28a745;
+    color: white;
+}
+
+#theme-toggle {
+    background: none;
+    font-size: 20px;
+}
+
+.hero {
+    margin: 50px auto;
+    padding: 20px;
+    max-width: 600px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+}
+
+#learn-more {
+    background: #ffcc00;
+    color: black;
+}
